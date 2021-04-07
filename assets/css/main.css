@@ -26,10 +26,14 @@ ul {
     width: 50%;
     text-align: center;
     border: 2px solid grey;
-  }
-  span {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px;
+}
+span {
+   display: table-cell;
+   vertical-align: middle;
+   padding: 10px;
   
-  }
+}
+a {
+    display: inline-block;
+    color: #9d9d9d;
+}
