@@ -25,7 +25,7 @@ ul {
     height: 100px;
     width: 50%;
     text-align: center;
-    border: 2px solid rgb(36, 36, 36);
+    border: 2px solid rgb(15, 15, 15);
 }
 span {
    display: table-cell;
