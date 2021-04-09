@@ -1,12 +1,18 @@
 <?php
+    if (file_exists("signatures.txt")){
+        $file = "signatures.txt";
+    } else {
+        $myfile = fopen("signatures.txt", "w");
+        header("Refresh:0");
+    }
+
     date_default_timezone_set("America/New_York");
-    $data_file = fopen("signatures.txt", "a") or die();
+
 
     $name = $_POST["StudentName"];
-    $lastName = $_POST["StudentLastName"];
     $time = date('Y/m/d/h:i:sa');
 
-    fwrite($data_file, $name . " " . $lastName . " Signed on " . $time, FILE_APPEND);
+    file_put_contents($name, " signed on ", $time);
     fclose($data_file);
 
     header('Location: '.'/assets/pages/php/signatures.txt');
