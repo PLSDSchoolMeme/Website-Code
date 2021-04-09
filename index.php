@@ -63,7 +63,7 @@
     </div>
     
     <p>If you would like to sign the letter leave your name here.<br></p>
-    <form action="/assets/pages/php/submit.php">
+    <form action="">
       <div class="form_name">
         <input type="text" name="StudentName" placeholder="Your first and last name">
         <input type="submit" name="" value="submit">
@@ -88,4 +88,17 @@
   </div>
 </body>
 </html>
+
+<?php
+  extract($_REQUEST);
+  date_default_timezone_set("America/New_York");
+  
+  $time = date('Y/m/d/h:i:sa').PHP_EOL; 
+  $file = fopen("signatures.txt","a");
+    
+  fwrite($file, $StudentName);
+  fwrite($file, " signed on ");
+  fwrite($file, $time . "\r");
+  fclose($file);
+?>
 
