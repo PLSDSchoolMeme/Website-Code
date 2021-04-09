@@ -33,6 +33,9 @@ span {
    padding: 10px;
   
 }
+.links {
+    text-align: center;
+}
 .links-to-groups a {
     display: inline-block;
     color: #9d9d9d;
