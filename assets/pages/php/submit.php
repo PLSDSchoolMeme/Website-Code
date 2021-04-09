@@ -4,9 +4,9 @@
 
     $name = $_POST["StudentName"];
     $lastName = $_POST["StudentLastName"];
-    $time = date('Y/m/d/h:i:sa').PHP_EOL;
+    $time = date('Y/m/d/h:i:sa');
 
-    fwrite($data_file, $name . " " . $lastName . " Signed on " . $time);
+    fwrite($data_file, $name . " " . $lastName . " Signed on " . $time, FILE_APPEND);
     fclose($data_file);
 
     header('Location: '.'signatures.txt');
