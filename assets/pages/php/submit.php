@@ -9,6 +9,6 @@
     fwrite($data_file, $name . " " . $lastName . " Signed on " . $time, FILE_APPEND);
     fclose($data_file);
 
-    header('Location: '.'signatures.txt');
+    header('Location: '.'/assets/pages/php/signatures.txt');
 ?>
 
