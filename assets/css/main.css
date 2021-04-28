@@ -14,12 +14,6 @@ p, blockquote {
     font-size: .9em;
     line-height: 1.6em;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 .main_text{
     display: table;
     height: 100px;
@@ -50,4 +44,35 @@ footer {
     padding: 3px;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+.links-of-posts{
+    padding-left: 10%;
+    padding-top: 10%;
+
 }
