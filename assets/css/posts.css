@@ -3,17 +3,11 @@
 *::after {
   box-sizing: border-box;
 }
-
-
-
-
 html {
   background-color: rgb(36, 36, 36);
 }
 body {
-  display: block;
-  margin: 8px;
-  color:rgb(36, 36, 36);
+  color: black;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -28,7 +22,18 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -50,18 +55,6 @@ img {
     width: 33.3333%;
   }
 }
-.btn {
-    background-color: white;
-    border: 1px solid #cccccc;
-    color: #696969;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-.btn--block {
-    display: block;
-    width: 100%;
-  }
 .card {
   background-color: white;
   border-radius: 0.25rem;
@@ -100,17 +93,17 @@ img {
     padding-top: 66.6%;
   }
 }
-.card__image--eastland {
-  background-image: url(/assets/images/pictures/eastland-career-center.jpg);
+.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
 }
-.card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+.card__image--hairspray {
+  background-image: url(/assets/images/pictures/hairyspray.png);
 }
 .card__image--record {
   background-image: url(https://unsplash.it/800/600?image=39);
 }
-.card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+.card__image--eastland {
+  background-image: url(/assets/images/pictures/eastland-career-center.jpg);
 }
 .card__title {
   color: #696969;
@@ -125,46 +118,28 @@ img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
   -webkit-mask-image: linear-gradient(to top, transparent, white 45%);
-
 }
-
 .nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-  
-.nav-links li {
-    float: left;
-}
-  
-.nav-links li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-  /* Change the link color to #111 (black) on hover */
-.nav-links li a:hover {
-    background-color: #111;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.links {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
+.nav-links li {
+  float: left;
+}
+
+.nav-links li a {
+  display: block;
   color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-footer {
-  padding: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
+/* Change the link color to #111 (black) on hover */
+.nav-links li a:hover {
+  background-color: #111;
 }
