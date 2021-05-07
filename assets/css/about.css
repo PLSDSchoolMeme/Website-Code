@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
 body {
-    margin: 0;
+    display: block;
+    margin: 8px;
     background-color: rgb(36, 36, 36);
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -27,8 +28,9 @@ span {
    padding: 10px;
   
 }
+/* footer section */
 .links {
-  position:absolute;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -36,16 +38,17 @@ span {
   color: white;
   text-align: center;
 }
+
+footer {
+  padding: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+/* end footer */
 .links-to-groups a {
     display: inline-block;
     color: #9d9d9d;
 }
-footer {
-    padding: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
 ul {
     list-style-type: none;
     margin: 0;

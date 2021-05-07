@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
 body {
-    margin: 0;
+    display: block;
+    margin: 8px;
     background-color: rgb(36, 36, 36);
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -28,51 +29,58 @@ span {
   
 }
 .links {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: black;
     color: white;
     text-align: center;
-}
+  }
+  
+  footer {
+    padding: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 .links-to-groups a {
     display: inline-block;
     color: #9d9d9d;
 }
-footer {
-    padding: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-}
 
-ul {
+
+.nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
+}
   
-  li {
+.nav-links li {
     float: left;
-  }
+}
   
-  li a {
+.nav-links li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+.nav-links li a:hover {
     background-color: #111;
-  }
-
-.links-of-posts{
-    padding-left: 10%;
-    padding-top: 10%;
-
 }
+
+@media (min-width: 40rem) {
+    p h1 {
+      width: 50%;
+    }
+  }
+  @media (min-width: 56rem) {
+    p h1 {
+      width: 33.3333%;
+    }
+  }
