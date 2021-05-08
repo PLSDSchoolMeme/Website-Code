@@ -99,8 +99,8 @@ img {
 .card__image--hairspray {
   background-image: url(/assets/images/pictures/hairyspray.png);
 }
-.card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
+.card__image--open-letter {
+  background-image: url(/assets/images/pictures/plsdschoolmeme.png);
 }
 .card__image--eastland {
   background-image: url(/assets/images/pictures/eastland-career-center.jpg);
